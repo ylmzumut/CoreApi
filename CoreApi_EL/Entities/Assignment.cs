@@ -19,7 +19,7 @@ namespace CoreApi_EL.Entities
         public DateTime CreatedDate { get; set; }
         [Required]
         [StringLength(500, MinimumLength = 2, ErrorMessage = ("Görev tanımı en az 2 en çok 500 karakter olabilir."))]
-        public string Description { get; set; }
+        public string Description { get; set; } = "XX";
         public bool IsCompleted { get; set; }
     }
 }
